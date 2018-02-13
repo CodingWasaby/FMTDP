@@ -1,0 +1,68 @@
+﻿// Configure bundling and minification for the project.
+// More info at https://go.microsoft.com/fwlink/?LinkId=808241
+// JavaScript Minifier settings ---> https://github.com/madskristensen/BundlerMinifier/wiki/JavaScript-Minifier-settings
+[
+  {
+    "outputFileName": "wwwroot/css/compress/site.min.css",
+    "inputFiles": [
+      "wwwroot/css/site.css"
+    ]
+  },
+  //Common
+  {
+    "outputFileName": "wwwroot/css/compress/fss.min.css",
+    "inputFiles": [
+      "wwwroot/css/animate.css",
+      "wwwroot/css/style.css",
+      "wwwroot/lib/font-awesome/css/font-awesome.css",
+      "wwwroot/css/sweetalert.css",
+      "wwwroot/css/plugin/toastr.min.css",
+      "wwwroot/js/plugin/gritter/jquery.gritter.css",
+      "wwwroot/css/plugin/c3/c3.min.css",
+      "wwwroot/css/plugin/switchery/switchery.css",
+      "wwwroot/css/plugin/select2/select2.min.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/compress/site.min.js",
+    "inputFiles": [
+      "wwwroot/js/site.js",
+      "wwwroot/js/Login.js",
+      "wwwroot/js/Cinema.js",
+      "wwwroot/js/Confirm.js",
+      "wwwroot/js/Arrange.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true,
+      "evalTreatment": "makeAllSafe"
+    },
+    "sourceMap": false
+  },
+
+  //Common
+  {
+    "outputFileName": "wwwroot/js/compress/fss.min.js",
+    "inputFiles": [
+      "wwwroot/js/plugin/metisMenu/jquery.metisMenu.js",
+      "wwwroot/js/plugin/slimscroll/jquery.slimscroll.min.js",
+      "wwwroot/js/plugin/gritter/jquery.gritter.min.js",
+      "wwwroot/js/plugin/pace/pace.min.js",
+      "wwwroot/js/plugin/sweetalert.min.js",
+      "wwwroot/js/plugin/inspinia.js",
+      "wwwroot/js/plugin/contabs.min.js",
+      "wwwroot/js/plugin/chartJs/Chart.min.js",
+      "wwwroot/js/plugin/sparkline/jquery.sparkline.min.js",
+      "wwwroot/js/plugin/d3/d3.min.js",
+      "wwwroot/js/plugin/c3/c3.min.js",
+      "wwwroot/js/plugin/switchery/switchery.js",
+      "wwwroot/js/plugin/select2/select2.full.min.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true,
+      "evalTreatment": "makeAllSafe"
+    },
+    "sourceMap": false
+  }
+]

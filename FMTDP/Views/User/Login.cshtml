@@ -1,0 +1,41 @@
+﻿@{
+    Layout = "_Layout_Login";
+}
+<!DOCTYPE html>
+<script>
+    window.onloadstart = function () {
+        if (window.parent == window) {
+
+        }
+        else {
+            parent.toLogin();
+        }
+    }
+
+</script>
+<body class="gray-bg">
+    <div class="middle-box text-center loginscreen animated fadeInDown">
+        <div>
+            <div>
+                <h1 class="logo-name">FocusMedia</h1>
+            </div>
+            <h3>欢迎访问 分众技术文档</h3>
+            <p>
+               包含 类库，接口，设计等各种文档
+            </p>
+
+            <div class="form-group">
+                <input class="form-control " placeholder="员工号 Employee ID" required="required" id="userName">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="FUM登陆密码 Password" required="required" id="password">
+            </div>
+            <button id="sumbit" class="btn btn-primary block full-width m-b" onclick="loginSumbit()">登陆</button>
+            @*<a class="text-muted text-center" asp-controller="Login" asp-action="ForgetPass">忘记密码?</a>*@
+            <a class="text-muted text-center" target="_blank" href="http://192.168.4.133:8008/WebService/DataInterfaceV20140813/TakePassword.aspx">忘记密码?</a>
+            <a class="btn btn-sm btn-white btn-block" target="_blank" style="margin-top: 10px;" asp-controller="Login" asp-action="Register">申请权限</a>
+            <p class="m-t"> <small>Focus Media Holding Ltd. All Rights Reserved  &copy; @DateTime.Now.Year</small> </p>
+        </div>
+    </div>
+</body>
+
